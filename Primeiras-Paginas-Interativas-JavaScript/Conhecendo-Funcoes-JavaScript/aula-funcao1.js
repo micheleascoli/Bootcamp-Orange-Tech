@@ -22,3 +22,15 @@ function incrementarJuros(valor, percentualJuros) {
 const valor = incrementarJuros(100,10);
 console.log(valor);
 console.log(incrementarJuros(100,25));
+
+function calcularJuros() {
+
+}
+
+
+function main(){
+    console.log('Programa Principal');
+    calcularJuros();
+}
+
+main();
