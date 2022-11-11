@@ -23,3 +23,7 @@ class Carro {
 
 const c1 = new Carro('Nissan', 'Cinza', 10);
 console.log(c1.calcularGastoDoPercurso(70, 5));
+
+const c2 = new Carro('Mercedes', 'Preta', 8);
+console.log(c2.calcularGastoDoPercurso(100, 7.3));
+
