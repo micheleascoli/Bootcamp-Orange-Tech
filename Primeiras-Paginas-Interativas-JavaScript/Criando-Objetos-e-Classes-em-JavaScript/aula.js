@@ -4,7 +4,7 @@ class Pessoa {
     idade;
     anoDeNascimento;
 
-    constructor (nome, idade){
+    constructor(nome, idade) {
         this.nome = nome;
         this.idade = idade;
         this.anoDeNascimento = 2022 - idade;
@@ -15,36 +15,19 @@ class Pessoa {
     }
 }
 
+function compararPessoas(p1, p2) {
+    if (p1.idade > p2.idade) {
+        console.log(`${p1.nome} é mais velho(a) que ${p2.nome}.`);
+    } else if (p2.idade > p1.idade) {
+        console.log(`${p2.nome} é mais velho(a) que ${p1.nome}.`);
+    } else {
+        console.log(`${p1.nome} e ${p2.nome} tem a mesma idade!`);
+    }
+}
+
+
+
 const p1 = new Pessoa('Michele O Ascoli', 26);
-// p1.nome = 'Michele O Ascoli';
-// p1.idade = 26;
-
 const p2 = new Pessoa('A A', 70);
-// p2.nome = 'A A';
-// p2.idade = 55
 
-p1.descrever();
-p2.descrever();
-
-// const pessoa1 = {
-//     nome: 'Michele O Ascoli',
-//     idade: 26,
-
-//     descrever: function (){
-//         console.log(`Meu nome é ${this.nome} e minha idade é ${this.idade}.`);
-//     }
-// };
-
-
-// pessoa.descrever = function(){
-//     console.log(`Meu nome é ${this.nome}.`);
-// }
-
-// pessoa.descrever();
-
-
-/** Outra forma de acessar os valores */
-// const atributo = 'idade';
-
-// anotação de coleção
-// console.log(pessoa[atributo]);
+compararPessoas(p1,p2);
