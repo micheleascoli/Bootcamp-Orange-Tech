@@ -42,21 +42,3 @@ console.log('Meu IMC é '+pessoa1.calcularImc().toFixed(2) + ', e está classifi
 
 const pessoa2 = new Pessoa('Michele', 113, 1.67);
 console.log('Meu IMC é '+pessoa2.calcularImc().toFixed(2) + ', e está classificado como '+ pessoa2.classificarImc());
-
-new Pessoa ('fulano', 10, 1).classificarImc();
-
-class PessoaS {
-    nome;
-    idade;
-
-    constructor(nome, idade) {
-        this.nome = nome;
-        this.idade = idade;
-    }
-
-    descrever() {
-        console.log(`Nome: ${this.nome}; Idade: ${this.idade};`);
-    }
-}
-
-new PessoaS('Renan', 30).descrever();
