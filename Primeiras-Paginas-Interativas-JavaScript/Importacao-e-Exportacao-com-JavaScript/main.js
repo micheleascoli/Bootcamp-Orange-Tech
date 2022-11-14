@@ -17,18 +17,31 @@ const { gets, print} = require('./funcoes-auxiliares');
 
 const numerosSorteados = [];
 
-for (let i = 0; i < 5; i++) {
-    const numerosSorteado = gets();
-    numerosSorteados.push(numerosSorteado);
-}
+// for (let i = 0; i < 5; i++) {
+//     const numerosSorteado = gets();
+//     numerosSorteados.push(numerosSorteado);
+// }
 
 let numeroMaior = 0;
 
-for (let i = 0; i < numerosSorteados.length; i++) {
-    if(numerosSorteados[i] > numeroMaior){
-        numeroMaior = numerosSorteados[i];
+// for (let i = 0; i < numerosSorteados.length; i++) {
+//     if(numerosSorteados[i] > numeroMaior){
+//         numeroMaior = numerosSorteados[i];
+//     }    
+// }
+
+
+// Outra forma:
+
+
+
+for (let i = 0; i < 5; i++) {
+    const numerosSorteado = gets();
+    if(numerosSorteado > numeroMaior){
+        numeroMaior = numerosSorteado;
     }    
+    
 }
 
-print(numeroMaior);
 
+print(numeroMaior);
